@@ -8,10 +8,47 @@
       <script src="js/jquery-3.6.0.min.js"></script>
     </head>
     <body>
+      <header class="header">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <div class="nav__list__space">
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --about --mobileHidden" href="https://about.google/">Googleについて</a>
+              </li>
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --store --mobileHidden" href="https://store.google.com/">ストア</a>
+              </li>
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --humbergar --mobileDisplay"><img class="--etc__img" src="parts/humbarger.svg"></a>
+              </li>
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --all --mobileDisplay" href="">すべて</a>
+              </li>
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --pic --mobileDisplay" href="https://www.google.co.jp/imghp">画像</a>
+              </li>
+            </div>
+            <div class="nav__list__space">
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --gmail --mobileHidden" href="https://mail.google.com/mail/">Gmail</a>
+              </li>
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --img --mobileHidden" href="https://www.google.co.jp/imghp">画像</a>
+              </li>
+              <li class="nav__list__item">
+                <a class="nav__list__item__button --etc"><img class="--etc__img" src="parts/etc.png"></a>
+              </li>
+              <li class="nav__list__item">
+                <button class="nav__list__item__button --login">ログイン</button>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
       <main class="main">
         <div class="main__wrapper">
           <h1 class="main__wrapper__title">
-            <img class="main__wrapper__title__logo" src="parts/logo.png">
+            <img alt="Googleのロゴ" class="main__wrapper__title__logo" src="parts/logo.png">
           </h1>
           <div class="main__wrapper__search search">
             <input class="search__keyword" type="text" placeholder="Googleで検索またはURLを入力">
@@ -24,6 +61,8 @@
           </div>
         </div>
       </main>
+      <footer class="footer">
+      </footer>
     </body>
     <script src="js/index.js"></script>
 </html>
