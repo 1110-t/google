@@ -292,7 +292,7 @@ body{
       &.--mobileDisplay{
         display:none;
         @include mq(sm) {
-          display:block;
+          display:flex;
         };
       }
       &.--left{
@@ -324,7 +324,6 @@ body{
         right: 0;
         left: 0;
         margin: auto;
-        display: flex;
         justify-content: center;
       }
     }
