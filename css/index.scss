@@ -111,6 +111,48 @@ body{
 }
 
 
+.footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  &__locate{
+    width:100%;
+    height:72px;
+    background-color:#F3F3F3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a4a4a4;
+    @include mq(md) {
+      height:39px;
+    }
+    &__text{
+      padding-left:40px;
+      font-size:2.1rem;
+      color:#666666;
+      @include mq(md) {
+        padding-left:22.5px;
+        font-size:1.1rem;
+      }
+      @include mq(sm) {
+        padding-left:13.5px;
+        font-size:1.8rem;
+        height:auto;
+        vertical-align: middle;
+        line-height: 3.9rem;
+      }
+    }
+  }
+  &__navf{
+    width:100%;
+    height:72px;
+    background-color:#F3F3F3;
+    @include mq(md) {
+      height:39px;
+    }
+  }
+}
+
 /*
   module @nav
 */
@@ -213,6 +255,80 @@ body{
           }
         }
       }
+    }
+  }
+}
+/*
+
+/*
+  module @navf
+*/
+.navf{
+  &__list{
+    font-size:1.9rem;
+    position:relative;
+    display: flex;
+    height: 100%;
+    &__mark{
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background-color: black;
+    }
+    @include mq(md) {
+      font-size:1.0rem;
+    }
+    &__space{
+      display: flex;
+      width: 50%;
+      height: 100%;
+      align-items: center;
+      &.--mobileHidden{
+        @include mq(sm) {
+          display:none;
+        };
+      }
+      &.--mobileDisplay{
+        display:none;
+        @include mq(sm) {
+          display:block;
+        };
+      }
+      &.--left{
+        padding-left:40px;
+        justify-content: flex-start;
+        @include mq(md) {
+          justify-content: flex-end;
+          padding-right:75px;
+        }
+        & .navf__list__item{
+          margin-right:0px;
+          margin-left:20px;
+        }
+      }
+      &.--right{
+        padding-right:40px;
+        justify-content: flex-end;
+        @include mq(md) {
+          justify-content: flex-start;
+          padding-left:75px;
+        }
+        & .navf__list__item{
+          margin-right:20px;
+          margin-left:0px;
+        }
+      }
+      &.--center{
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &__item{
+      margin-right:40px;
     }
   }
 }
