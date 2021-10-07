@@ -1,7 +1,7 @@
 # Making google search form
 <br/>
 
-<div align="center"><img src="https://user-images.githubusercontent.com/86333669/136314626-17a3e24e-4ec6-47b5-9358-f05d5dc3196a.png"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/86333669/136344243-94ad764f-9058-44c8-aa30-2c49f7b845b9.gif"></div>
 
 ## For Beginner of HTML : making google search form
 
